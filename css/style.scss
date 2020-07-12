@@ -1,0 +1,26 @@
+@import 'fonts';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'SF Text';
+}
+
+.ntc-header{
+    .ntc-nav{
+        .ntc-menu{
+            .ntc-items{
+                display: inline-block;
+                padding: 30px;
+                a{
+                    text-decoration: none;
+                    color: #000000;
+                    padding: auto;
+                    &:hover{
+                        background-color: #ababab;
+                    }
+                }
+            }
+        }
+    }
+}

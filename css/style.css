@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "SF Text";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Text-Regular.otf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'SF Text';
+}
+
+.ntc-header .ntc-nav .ntc-menu .ntc-items {
+  display: inline-block;
+  padding: 30px;
+}
+
+.ntc-header .ntc-nav .ntc-menu .ntc-items a {
+  text-decoration: none;
+  color: #000000;
+  padding: auto;
+}
+
+.ntc-header .ntc-nav .ntc-menu .ntc-items a:hover {
+  background-color: #ababab;
+}
+/*# sourceMappingURL=style.css.map */
