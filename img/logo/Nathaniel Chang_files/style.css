@@ -26,7 +26,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 25px 20px 0px;
+  padding: 20px 25px;
   border-radius: 5px;
 }
 
@@ -41,8 +41,6 @@
 
 .ntc-header .ntc-nav .icon-logo:hover {
   background-color: #ececec;
-  padding-left: 25px;
-  margin-left: -25px;
 }
 
 .ntc-header .ntc-nav .ntc-menu .ntc-items {
@@ -61,20 +59,12 @@
 
 .ntc-intro {
   margin-top: 15vh;
-  margin-left: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 80%;
+  margin-left: 15%;
 }
 
-.ntc-intro p .ntc-intro1 {
-  padding-top: 10px;
-  font-size: 2.25em;
-  font-weight: 600;
+.ntc-intro p {
+  font-size: 1.9em;
+  font-weight: 800;
 }
 
 .ntc-intro p .intro-link {
@@ -91,11 +81,5 @@
   color: #000000;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-.ntc-intro img {
-  height: 400px;
-  border-radius: 20px;
-  margin-left: 150px;
 }
 /*# sourceMappingURL=style.css.map */

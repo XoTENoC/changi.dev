@@ -1,3 +1,13 @@
+<!-- 
+/
+/   index.html 
+/
+/   Here is the main home page containing links to other parts of the website
+/   This website was created by Nathaniel Chang
+/
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,18 +15,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathaniel Chang</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo/passport.svg">
 </head>
 <body>
 
+
+    <!-- The following code is the head of the website inside is a simple nav to move around the website -->
     <header class="ntc-header">
         <nav class="ntc-nav">
+            <div class="icon-logo">
+                <img src="./img/logo/passport.svg" alt="LOGO">
+                <span class="logo-text">Nathaniel Chang</span>
+            </div>
             <ul class="ntc-menu">
-                <li class="ntc-items"><a href="#">About</a></li>
-                <li class="ntc-items"><a href="#">Blog</a></li>
-                <li class="ntc-items"><a href="#">Tuorials</a></li>
+                <li class="ntc-items">About</li>
+                <li class="ntc-items">Blog</li>
+                <li class="ntc-items">Tuorials</li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="ntc-intro">
+            <p class="intro-para">
+                <span class="ntc-intro1">Hi! my name is <span class="intro-link">Nathaniel Chang</span>.<br>
+                I'm a programmer and photographer<br>
+                and i enjoy making things.</span>
+                This website is 
+            </p>
+            <img src="./img/me/profilePick.jpg" alt="meeee">
+        </section>
+    </main>
 
     <script src="./js/app.js"></script>
 </body>
