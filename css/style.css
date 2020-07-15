@@ -1,3 +1,10 @@
+/*
+*
+*   style.scss
+*
+*   this file is the main style sheet for the website
+*
+*/
 @font-face {
   font-family: "SF Text";
   font-weight: 400;
@@ -17,7 +24,7 @@
 
 .ntc-header .ntc-nav {
   margin-left: 10%;
-  width: 50%;
+  width: 80%;
   cursor: pointer;
 }
 
@@ -28,6 +35,8 @@
   display: flex;
   padding: 20px 25px 20px 0px;
   border-radius: 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .ntc-header .ntc-nav .icon-logo .logo-text {
@@ -36,13 +45,15 @@
 }
 
 .ntc-header .ntc-nav .icon-logo img {
-  height: 20px;
+  height: 1.1em;
 }
 
 .ntc-header .ntc-nav .icon-logo:hover {
   background-color: #ececec;
   padding-left: 25px;
   margin-left: -25px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .ntc-header .ntc-nav .ntc-menu .ntc-items {
@@ -52,11 +63,16 @@
   cursor: pointer;
   border-radius: 5px;
   color: #acacac;
+  margin-top: 0px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .ntc-header .ntc-nav .ntc-menu .ntc-items:hover {
   background-color: #ececec;
   color: #727272;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .ntc-intro {
@@ -71,20 +87,27 @@
   width: 80%;
 }
 
-.ntc-intro p .ntc-intro1 {
+.ntc-intro .intro-para .ntc-intro1 {
   padding-top: 10px;
   font-size: 2.25em;
   font-weight: 600;
 }
 
-.ntc-intro p .intro-link {
+.ntc-intro .intro-para .ntc-intro2 {
+  margin-top: 60px;
+  font-size: 1.25em;
+  color: #494949;
+  line-height: 30px;
+}
+
+.ntc-intro .intro-para .intro-link {
   color: #8e44ad;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.ntc-intro p .intro-link:hover {
+.ntc-intro .intro-para .intro-link:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: #8e44ad;
           text-decoration-color: #8e44ad;
@@ -97,5 +120,85 @@
   height: 400px;
   border-radius: 20px;
   margin-left: 150px;
+}
+
+.ntc-latest {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.ntc-latest .ntc-latest-title {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.ntc-latest .ntc-latest-links .ntc-latest-link {
+  padding-top: 5px;
+  border-radius: 10px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.ntc-latest .ntc-latest-links .ntc-latest-link:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  margin-left: -20px;
+  padding-left: 12px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.ntc-latest .ntc-latest-links .ntc-latest-link time {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #8f8f8f;
+}
+
+.ntc-latest .ntc-latest-links .ntc-latest-link .ntc-latest-link-name {
+  font-weight: 700;
+}
+
+.ntc-latest .ntc-latest-links .ntc-latest-link .ntc-latest-link-tags {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ntc-projects {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.ntc-projects .ntc-projects-title {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.ntc-newsletter {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.ntc-newsletter .ntc-newsletter-title {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.ntc-spacer {
+  height: 100px;
+}
+
+.tag-html {
+  background-color: #E2F0CB;
+}
+
+.tag-css {
+  background-color: #FFB7B2;
+}
+
+.tag-javascript {
+  background-color: #FFDAC1;
 }
 /*# sourceMappingURL=style.css.map */

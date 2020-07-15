@@ -1,3 +1,12 @@
+/*
+*
+*   style.scss
+*
+*   this file is the main style sheet for the website
+*
+*/
+
+
 @import 'fonts';
 
 *{
@@ -11,24 +20,26 @@
     font-size: 20px;
     .ntc-nav{
         margin-left: 10%;
-        width: 50%;
+        width: 80%;
         cursor: pointer;
         .icon-logo{
             float: left;
             display: flex;
             padding: 20px 25px 20px 0px;
             border-radius: 5px;
+            transition: 0.1s;
             .logo-text{
                 margin-left: 10px;
                 font-weight: 600;
             }
             img{
-                height: 20px;
+                height: 1.1em;
             }
             &:hover{
                 background-color: #ececec;
                 padding-left: 25px;
                 margin-left: -25px;
+                transition: 0.1s;
             }
         }
         .ntc-menu{
@@ -39,9 +50,12 @@
                 cursor: pointer;
                 border-radius: 5px;
                 color: #acacac;
+                margin-top: 0px;
+                transition: 0.1s;
                 &:hover{
                     background-color: #ececec;
                     color: #727272;
+                    transition: 0.1s;
                 }
             }
         }
@@ -54,11 +68,17 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
-    p{
+    .intro-para{
         .ntc-intro1{
         padding-top: 10px;
         font-size: 2.25em;
         font-weight: 600;
+        }
+        .ntc-intro2{
+            margin-top: 60px;
+            font-size: 1.25em;
+            color: #494949;
+            line-height: 30px;
         }
         .intro-link{
             color: #8e44ad;
@@ -77,4 +97,78 @@
         border-radius: 20px;
         margin-left: 150px;
     }
+}
+
+.ntc-latest{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    .ntc-latest-title{
+        font-weight: 800;
+        font-size: 2em;
+    }
+    .ntc-latest-links{
+        .ntc-latest-link{
+            padding-top: 5px;
+            border-radius: 10px;
+            transition: 0.1s;
+            &:hover{
+                cursor: pointer;
+                background-color: #f1f1f1;
+                margin-left: -20px;
+                padding-left: 12px;
+                transition: 0.1s;
+            }
+            time{
+                font-weight: 400;
+                font-size: 0.9em;
+                color: #8f8f8f;
+            }
+            .ntc-latest-link-name{
+                font-weight: 700;
+            }
+            .ntc-latest-link-tags{
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+    }
+}
+
+.ntc-projects{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    .ntc-projects-title{
+        font-weight: 800;
+        font-size: 2em;
+    }
+}
+
+.ntc-newsletter{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    .ntc-newsletter-title{
+        font-weight: 800;
+        font-size: 2em;
+    }
+}
+
+.ntc-spacer{
+    height: 100px;
+}
+
+// tag colours
+
+.tag-html{
+    background-color: #E2F0CB;
+}
+
+.tag-css{
+    background-color: #FFB7B2;
+}
+
+.tag-javascript{
+    background-color: #FFDAC1;
 }
