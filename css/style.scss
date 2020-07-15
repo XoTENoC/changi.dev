@@ -44,7 +44,6 @@
         }
         .ntc-menu{
             .ntc-items{
-                margin-left: 20px;
                 padding: 20px 25px;
                 display: inline-block;
                 cursor: pointer;
@@ -56,6 +55,9 @@
                     background-color: #ececec;
                     color: #727272;
                     transition: 0.1s;
+                }
+                &:first-child{
+                    margin-left: 20px;
                 }
             }
         }
@@ -155,8 +157,30 @@
     }
 }
 
+footer{
+    .ntc-footer-list{
+        list-style: none;
+        margin-left: 10%;
+        .ntc-footer-item{
+            display: inline-block;
+            img{
+                margin-left: 20px;
+                padding: 10px;
+                height: 3.5em;
+                cursor: pointer;
+                border-radius: 0.5em;
+                transition: 0.1s;
+                &:hover{
+                    transition: 0.1s;
+                    background-color: #e4e4e4;
+                }
+            }
+        }
+    }
+}
+
 .ntc-spacer{
-    height: 100px;
+    height: 3em;
 }
 
 // tag colours

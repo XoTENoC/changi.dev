@@ -57,7 +57,6 @@
 }
 
 .ntc-header .ntc-nav .ntc-menu .ntc-items {
-  margin-left: 20px;
   padding: 20px 25px;
   display: inline-block;
   cursor: pointer;
@@ -73,6 +72,10 @@
   color: #727272;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+}
+
+.ntc-header .ntc-nav .ntc-menu .ntc-items:first-child {
+  margin-left: 20px;
 }
 
 .ntc-intro {
@@ -186,8 +189,33 @@
   font-size: 2em;
 }
 
+footer .ntc-footer-list {
+  list-style: none;
+  margin-left: 10%;
+}
+
+footer .ntc-footer-list .ntc-footer-item {
+  display: inline-block;
+}
+
+footer .ntc-footer-list .ntc-footer-item img {
+  margin-left: 20px;
+  padding: 10px;
+  height: 3.5em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+footer .ntc-footer-list .ntc-footer-item img:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background-color: #e4e4e4;
+}
+
 .ntc-spacer {
-  height: 100px;
+  height: 3em;
 }
 
 .tag-html {
