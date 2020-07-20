@@ -5,6 +5,7 @@
 *   this file is the main style sheet for the website
 *
 */
+@import url(//db.onlinewebfonts.com/c/9f94dc20bb2a09c15241d3a880b7ad01?family=Menlo);
 @font-face {
   font-family: "SF Text";
   font-weight: 400;
@@ -212,6 +213,106 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
   -webkit-transition: 0.1s;
   transition: 0.1s;
   background-color: #e4e4e4;
+}
+
+.ntc-about-me {
+  margin-top: 3.5em;
+  width: 60%;
+  margin-left: 10%;
+}
+
+.ntc-about-me .ntc-about-title {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.ntc-about-me .ntc-about-paragraph {
+  font-size: 1.1em;
+}
+
+.filename {
+  font-size: .9rem;
+  margin-bottom: -.8rem;
+  padding: .5rem 1.5rem .75rem;
+  line-height: 1.8;
+  background-color: #000;
+  color: #fff;
+  z-index: 1;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  padding: .5rem 1rem .75rem;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ntc-article-list {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.ntc-article-list .ntc-article-list-title {
+  font-weight: 800;
+  font-size: 3em;
+}
+
+.ntc-article-list .ntc-latest-links .ntc-latest-link {
+  padding-top: 5px;
+  border-radius: 10px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.ntc-article-list .ntc-latest-links .ntc-latest-link:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  margin-left: -20px;
+  padding-left: 12px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.ntc-article-list .ntc-latest-links .ntc-latest-link time {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #8f8f8f;
+}
+
+.ntc-article-list .ntc-latest-links .ntc-latest-link .ntc-latest-link-name {
+  font-weight: 700;
+}
+
+.ntc-article-list .ntc-latest-links .ntc-latest-link .ntc-latest-link-tags {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #000;
+}
+
+.ntc-gallery {
+  -webkit-columns: 6 15em;
+          columns: 6 15em;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ntc-gallery .ntc-image img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.link-click {
+  text-decoration: none;
+  color: #000;
+}
+
+.link-click:hover {
+  text-decoration: none;
+  color: #000;
 }
 
 .ntc-spacer {

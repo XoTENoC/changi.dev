@@ -7,26 +7,24 @@ const githubLink = document.getElementById("github");
 const unsplashLink = document.getElementById("unsplash");
 const instaLink = document.getElementById("insta");
 
-const youtubeChat = document.getElementById("youtubeChat");
-
 aboutBtn.onclick = function() {
-    location.href = "./about.html";
+    location.href = "../about.html";
 };
 
 blogBtn.onclick = function() {
-    location.href = "./blog.html";
+    location.href = "../blog.html";
 };
 
 tutorialBtn.onclick = function() {
-    location.href = "./tutorial.html";
+    location.href = "../tutorial.html";
 };
 
 galleryBtn.onclick = function() {
-    location.href = "./gallery.html";
+    location.href = "../gallery.html";
 };
 
 homeBtn.onclick = function() {
-    location.href = "./index.html";
+    location.href = "../index.html";
 };
 
 githubLink.onclick = function() {
@@ -40,7 +38,3 @@ unsplashLink.onclick = function() {
 instaLink.onclick = function() {
     location.href = "https://www.instagram.com/nathaniel.chang/";
 };
-
-youtubeChat.onclick = function() {
-    location.href = "./blog/youtube-chat.html";
-}

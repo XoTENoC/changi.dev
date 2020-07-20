@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Clean and simple Youtube Live Chat Feed</title>
+    <link rel="icon" href="../img/logo/passport.svg">
+    <link rel="stylesheet" href="../css/spectre.min.css">
+    <link rel="stylesheet" href="../css/spectre-exp.min.css">
+    <link rel="stylesheet" href="../css/spectre-icons.min.css">
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="ntc-header">
+        <nav class="ntc-nav">
+            <div class="icon-logo" id="home">
+                <img src="../img/logo/passport.svg" alt="LOGO">
+                <span class="logo-text">Nathaniel Chang</span>
+            </div>
+            <ul class="ntc-menu">
+                <li class="ntc-items" id="about">About</li>
+                <li class="ntc-items" id="blog">Blog</li>
+                <li class="ntc-items" id="tutorial">Tutorials</li>
+                <li class="ntc-items" id="gallery">Gallery</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="ntc-about-me">
+            <h2 class="ntc-about-title">Creating a Clean and simple Youtube Live Chat Feed</h2>
+            <p class="ntc-about-paragraph">
+                Hello, this is my first post I am Nathaniel a year 12 student that loves code, photography, live production and my church. The aim of my blog and this website is to create code that can helps my team at church overcome issues and create apps that allow us to do our job a lot better.<br>
+                <br>
+                This a first post is on how I created a clean YouTube chat windows for the pastors at church to be able to see an uninterrupted view of the live chat on YouTube. So that they will be able to focus on what is most important, the people.<br>
+                <br>
+                I did not do this all on my own, to start this project I followed lots of tutorials on how to use the YouTube API and produce a JSON file with all the information that I needed. A lot of the tutorials that I found online did not help ne do what I needed to do so I kind of ignored them but there was one YouTube video that got me most of the way. He thought me how to create a YouTube bot that could insert text into the chat, so I modified the code that he wrote to do what I need to do.<br>
+                <br>
+                Hopefully when this post goes live you will be able to reach a link that will allow you to access this tool online. This tool is great for people wanting to see an uninterrupted feed of their YouTube live chat that to clean and only has the comments and the username of the person. It is best suited to be used on a screen right next to the camera so that the host is able to talk to the camera and read the comments.<br>
+                <br>
+                Disclaimer:
+                Do I know what I’m doing, sort of? This is all a way for me to learn and grow in my skills as a programmer. If you are an able to get the app working keep trying until you get something that works for you. This is not a tutorial just to show you how I created this project and how could create something similar. All the code for the project can be found on GitHub and here is the link.<br>
+
+
+            </p>
+<p class="filename">app.js</p>
+<div class="ntc-blog-code">
+    <pre><code class="language-js">function update() 
+    fetch("./object.json")
+        .then(function (resp) {
+            return resp.json();
+        })
+        .then(function (data) {
+            var chat = data;
+            console.log(data);
+            setTimeout(update, 1000);
+            // console.log(Object.keys(data.items).length);
+            for (let i = 0; i < Object.keys(data.items).length; i++) {
+                // chatBox.innerHTML += data.items[i].authorDetails.displayName;
+                // chatBox.innerHTML += ': ';
+                // chatBox.innerHTML += data.items[i].snippet.displayMessage;
+                // chatBox.innerHTML += '<br>';
+
+                const chatBox = document.getElementById("chat");
+                const chatName = document.createElement("div");
+                const chatMessage = document.createElement("div");
+                const row = document.createElement("div");
+
+                const chatNameText = document.createTextNode(data.items[i].authorDetails.displayName);
+                const chatMessageText = document.createTextNode(data.items[i].snippet.displayMessage);
+
+                const collum4 = ['col', 's4'];
+                const collum8 = ['col', 's8'];
+
+                chatName.appendChild(chatNameText);
+                chatName.classList.add(...collum4);
+                chatMessage.appendChild(chatMessageText);
+                chatMessage.classList.add(...collum8);
+                row.appendChild(chatName);
+                row.appendChild(chatMessage);
+                row.classList.add("row");
+                chatBox.appendChild(row);
+
+            }
+        })
+
+}
+
+update();</code></pre>
+    </div>
+        </section>
+    </main>
+    <script src="../js/prism.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
