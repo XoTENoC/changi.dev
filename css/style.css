@@ -247,6 +247,10 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
   margin-right: auto;
 }
 
+.ntc-blog-code::-webkit-scrollbar {
+  display: none;
+}
+
 .ntc-article-list {
   width: 80%;
   margin-left: 10%;
@@ -329,5 +333,10 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
 
 .tag-javascript {
   background-color: #FFDAC1;
+}
+
+.ntc-alert {
+  font-weight: 600;
+  color: #f03434;
 }
 /*# sourceMappingURL=style.css.map */

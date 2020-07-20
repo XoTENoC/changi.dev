@@ -214,6 +214,9 @@ footer{
 }
 
 .ntc-blog-code{
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 .ntc-article-list{
@@ -292,4 +295,11 @@ footer{
 
 .tag-javascript{
     background-color: #FFDAC1;
+}
+
+//Blog Colours
+
+.ntc-alert{
+    font-weight: 600;
+    color: #f03434;
 }
