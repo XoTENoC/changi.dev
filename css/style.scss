@@ -214,9 +214,7 @@ footer{
 }
 
 .ntc-blog-code{
-    &::-webkit-scrollbar{
-        display: none;
-    }
+    scrollbar-width: none;
 }
 
 .ntc-article-list{
@@ -277,6 +275,16 @@ footer{
         text-decoration: none;
         color: #000;
     }
+}
+
+.link-click::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa; /* or add it to the track */
+}
+
+.link-click::-webkit-scrollbar-thumb {
+    background: #000; 
 }
 
 .ntc-spacer{

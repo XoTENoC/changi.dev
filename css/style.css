@@ -247,8 +247,8 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
   margin-right: auto;
 }
 
-.ntc-blog-code::-webkit-scrollbar {
-  display: none;
+.ntc-blog-code {
+  scrollbar-width: none;
 }
 
 .ntc-article-list {
@@ -317,6 +317,17 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
 .link-click:hover {
   text-decoration: none;
   color: #000;
+}
+
+.link-click::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+  /* or add it to the track */
+}
+
+.link-click::-webkit-scrollbar-thumb {
+  background: #000;
 }
 
 .ntc-spacer {
