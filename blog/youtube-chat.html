@@ -40,9 +40,57 @@
                 <br>
                 <span class="ntc-alert">Disclaimer</span>:
                 Do I know what I’m doing, sort of? This is all a way for me to learn and grow in my skills as a programmer. If you are an able to get the app working keep trying until you get something that works for you. This is not a tutorial just to show you how I created this project and how could create something similar. All the code for the project can be found on GitHub and here is the link.<br>
+                <br>
+                <hr>
+                <br>
+                The tutorial that I original followed used node.js to pull the data from the YouTube API and create a live chat bot. AS I didn’t need the chat bot I use the tutorial to create a json file the I would be able to pull the chat message from.<br>
+                <br>
+                In the object.json file seen below you can see that on a request I get both the message that was sent into the chat and the username of the person that was sent into the chat. The great thing with the request is it only sends back the messages that have been posted since the last request.<br>
 
 
             </p>
+            <p class="filename">object.json</p>
+<div class="ntc-blog-code">
+    <pre><code class="language-js">{
+"kind":"youtube#liveChatMessageListResponse",
+"etag":"\"tnVOtk4NeGU6nDncDTE5m9SmuHc/ikcvOEa29D5GT8-DjT2bXdMLUTQ\"",
+"nextPageToken":"GNz1rJH05ugCIN_r6Y_15ugC",
+"pollingIntervalMillis":977,
+"pageInfo":{
+   "totalResults":1,
+   "resultsPerPage":1
+},
+"items":[
+   {
+      "kind":"youtube#liveChatMessage",
+      "etag":"\"tnVOtk4NeGU6nDncDTE5m9SmuHc/gHzGVCsS3PqUS_KYwmG_e62SLNQ\"",
+      "id":"LCC.CjgKDQoLQVNSci1iQWplWG8qJwoYVUNkR2V1YnJ4MFpuNlBraDVoaDB2YU5nEgtBU1JyLWJBamVYbxI5ChpDSUdOaHNEbzV1Z0NGWTFUN1FvZEg5b0NZZxIbQ0txX3ZiWG41dWdDRmRTTmNBb2RXTjhBaFEw",
+      "snippet":{
+         "type":"textMessageEvent",
+         "liveChatId":"Cg0KC0FTUnItYkFqZVhvKicKGFVDZEdldWJyeDBabjZQa2g1aGgwdmFOZxILQVNSci1iQWplWG8",
+         "authorChannelId":"UCdGeubrx0Zn6Pkh5hh0vaNg",
+         "publishedAt":"2020-04-14T01:58:08.916Z",
+         "hasDisplayContent":true,
+         "displayMessage":"hello",
+         "textMessageDetails":{
+            "messageText":"hello"
+         }
+      },
+      "authorDetails":{
+         "channelId":"UCdGeubrx0Zn6Pkh5hh0vaNg",
+         "channelUrl":"http://www.youtube.com/channel/UCdGeubrx0Zn6Pkh5hh0vaNg",
+         "displayName":"Nathaniel Chang",
+         "profileImageUrl":"https://yt3.ggpht.com/-eHAjBhBLR78/AAAAAAAAAAI/AAAAAAAAAAA/yEpG5C8e6Ks/s88-c-k-no-mo-rj-c0xffffff/photo.jpg",
+         "isVerified":false,
+         "isChatOwner":true,
+         "isChatSponsor":false,
+         "isChatModerator":false
+      }
+   },
+]
+}</code></pre>
+    </div>
+
 <p class="filename">app.js</p>
 <div class="ntc-blog-code">
     <pre><code class="language-js">function update() 
@@ -88,6 +136,37 @@
 
 update();</code></pre>
     </div>
+<!---->
+<!---->
+<!---->
+<p class="filename">index.html</p>
+<div class="ntc-blog-code">
+    <pre><code class=" language-html">&lt;!DOCTYPE html>
+&lt;html lang="en">
+
+&lt;head>
+    &lt;title>Youtube Live Chat&lt;/title>
+    &lt;link type="text/css" rel="stylesheet" href="./css/materialize.min.css">
+&lt;/head>
+
+&lt;body>
+    &lt;h1>Youtube Live Chat&lt;/h1>
+    &lt;a href="/authorize"> &lt;button>Authorize&lt;/button> &lt;/a>
+    &lt;a href="/find-active-chat"> &lt;button>Get Active Chat&lt;/button> &lt;/a>
+    &lt;a href="/start-tracking-chat"> &lt;button>Start Tracking Chat&lt;/button> &lt;/a>
+    &lt;a href="/stop-tracking-chat"> &lt;button>Stop Tracking Chat&lt;/button> &lt;/a>
+    &lt;a href="/insert-message"> &lt;button>Insert Message&lt;/button> &lt;/a>
+    &lt;div id="chat">
+
+    &lt;/div>
+    &lt;script type="text/javascript" src="object.json">&lt;/script>
+    &lt;script type="text/javascript" src="app.js">&lt;/script>
+
+&lt;/body>
+
+&lt;/html>
+    </code></pre>
+</div>
         </section>
     </main>
     <script src="../js/prism.js"></script>
