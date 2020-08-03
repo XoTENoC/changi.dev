@@ -29,6 +29,12 @@
     <main>
         <section class="ntc-about-me">
             <h2 class="ntc-about-title">Creating a Clean and simple Youtube Live Chat Feed</h2>
+            <div class="ntc-latest-link-tags">
+                <span class="chip tag-html">html</span><span class="chip tag-css">css</span><span class="chip tag-js">Javascript</span>
+            </div>
+            <p>
+                <br>
+            </p>
             <p class="ntc-about-paragraph">
                 Hello, this is my first post I am Nathaniel a year 12 student that loves code, photography, live production and my church. The aim of my blog and this website is to create code that can helps my team at church overcome issues and create apps that allow us to do our job a lot better.<br>
                 <br>
@@ -41,14 +47,11 @@
                 <span class="ntc-alert">Disclaimer</span>:
                 Do I know what I’m doing, sort of? This is all a way for me to learn and grow in my skills as a programmer. If you are an able to get the app working keep trying until you get something that works for you. This is not a tutorial just to show you how I created this project and how could create something similar. All the code for the project can be found on GitHub and here is the link.<br>
                 <br>
-            </p>
-            <p class="ntc-about-paragraph">
-                <br>
                 The tutorial that I original followed used node.js to pull the data from the YouTube API and create a live chat bot. AS I didn’t need the chat bot I use the tutorial to create a json file the I would be able to pull the chat message from.<br>
                 <br>
                 In the object.json file seen below you can see that on a request I get both the message that was sent into the chat and the username of the person that was sent into the chat. The great thing with the request is it only sends back the messages that have been posted since the last request.<br>
 
-
+                <br>
             </p>
             <p class="filename">object.json</p>
 <div class="ntc-blog-code">
@@ -91,6 +94,12 @@
 ]
 }</code></pre>
     </div>
+    <p class="ntc-about-paragraph">
+        <br>
+        <br>
+        Now that I have a JSON file I can use the JavaScript to inject these messages into my site. I used a lot of create element which you can read more about here(link to Mozilla MDN). I created a loop that checks the JSON file every second how many new messages have been sent can the repeats this as many times as there are messages. In sort for each loop, it creates a div, inserts the display name of the user then adds a class of column4, then it creates another div and inserts the chat text inside that, then adds the chat message. After create that it creates another div and puts both the div with the display name and the chat message inside and adds a class of row and then puts that inside the chat box div. As I set up the request from the API every second I made this function timeout and start again every second.<br>
+        <br>
+    </p>
 
 <p class="filename">app.js</p>
 <div class="ntc-blog-code">
@@ -140,6 +149,9 @@ update();</code></pre>
 <!---->
 <!---->
 <!---->
+    <p class="ntc-about-paragraph">
+        <br>
+    </p>
 <p class="filename">index.html</p>
 <div class="ntc-blog-code">
     <pre><code class=" language-html">&lt;!DOCTYPE html>
@@ -168,6 +180,13 @@ update();</code></pre>
 &lt;/html>
     </code></pre>
 </div>
+<footer>
+    <ul class="ntc-footer-list">
+        <li class="ntc-footer-item" id="github"><img src="../img/logo/GitHub-Mark-120px-plus.png" alt="github"></li>
+        <li class="ntc-footer-item" id="unsplash"><img src="../img/logo/Unsplash_Symbol.png" alt="Unsplash_Symbol"></li>
+        <li class="ntc-footer-item" id="insta"><img src="../img/logo/glyph-logo_May2016.png" alt="instgram"></li>
+    </ul>
+</footer>
         </section>
     </main>
     <script src="../js/prism.js"></script>
