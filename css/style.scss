@@ -369,7 +369,7 @@ footer{
             .ntc-menu{
                 .ntc-items{
                     padding: 10px 15px;
-                    display: flex;
+                    display: inline-block;
                     cursor: pointer;
                     border-radius: 5px;
                     color: #acacac;
@@ -421,6 +421,18 @@ footer{
             border-radius: 20px;
             margin-left: 150px;
             display: none;
+        }
+    }
+    .ntc-about-me{
+        margin-top: 3.5em;
+        width: 90%;
+        margin-left: 5%;
+        .ntc-about-title{
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .ntc-about-paragraph{
+            font-size: 1.1em;
         }
     }
 }
