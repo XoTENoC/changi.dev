@@ -26,6 +26,40 @@ body {
   display: none;
 }
 
+.links {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  z-index: 1;
+  -webkit-transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+  transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+.links:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.links::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: .07em;
+  height: .1em;
+  width: 100%;
+  background: #3498db;
+  z-index: -1;
+  -webkit-transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+  transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+.links:hover::after {
+  height: .2em;
+  -webkit-transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+  transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
 .ntc-header {
   margin-top: 5vh;
   font-size: 20px;
@@ -199,9 +233,15 @@ body {
   font-size: 2em;
 }
 
+footer {
+  margin-top: 5em;
+}
+
 footer .ntc-footer-list {
   list-style: none;
-  margin-left: 10%;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer .ntc-footer-list .ntc-footer-item {
@@ -476,6 +516,9 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
   }
   .ntc-about-me .ntc-about-paragraph {
     font-size: 1.1em;
+  }
+  footer .ntc-footer-list {
+    width: 15em;
   }
 }
 /*# sourceMappingURL=style.css.map */
