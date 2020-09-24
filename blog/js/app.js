@@ -25,6 +25,7 @@ galleryBtn.onclick = function() {
 
 homeBtn.onclick = function() {
     location.href = "../index.html";
+    console.log("Clicked");
 };
 
 githubLink.onclick = function() {

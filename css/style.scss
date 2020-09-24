@@ -12,16 +12,28 @@
 
 *{
     margin: 0px;
-    padding: 0px;
     font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Roboto, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-body{
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
     color: #000;
 }
 
-#desktop{
+hr{
+    background-color: #cccccc;
+}
 
+a{
+    color: #000;
+    &:visited{
+        color: #000;
+    }
 }
 
 #mobile{
@@ -35,6 +47,7 @@ body{
     color: inherit;
     z-index: 1;
     transition: height .25s cubic-bezier(.6,0,.4,1);
+    color: #000;
     &:hover{
         text-decoration: none;
         color: #000;
@@ -57,19 +70,27 @@ body{
     height: .2em;
     transition: height .25s cubic-bezier(.6,0,.4,1);
   }
-  
 
 .ntc-header{
-    margin-top: 5vh;
+    padding: 0px;
     font-size: 20px;
+    background-color: #885bd0;
+    color: #fff;
+    z-index: 500 !important;
     .ntc-nav{
-        margin-left: 10%;
-        width: 80%;
+        top: 0;
+        width: 100%;
+        padding-left: 10%;
+        padding-top: 5px;
+        padding-bottom: 5px;
         cursor: pointer;
+        background-color: #885bd0;
+        position: fixed;
+        z-index: 500 !important;
         .icon-logo{
             float: left;
             display: flex;
-            padding: 20px 25px 20px 0px;
+            padding: 13px 17px 13px 0px;
             border-radius: 5px;
             transition: 0.1s;
             .logo-text{
@@ -80,32 +101,38 @@ body{
                 height: 1.1em;
             }
             &:hover{
-                background-color: #ececec;
+                background-color: #7947cb;
                 padding-left: 25px;
                 margin-left: -25px;
                 transition: 0.1s;
             }
         }
         .ntc-menu{
+            margin-right: 10%;
+            float: right;
             .ntc-items{
-                padding: 20px 25px;
+                padding: 13px 17px;
                 display: inline-block;
                 cursor: pointer;
                 border-radius: 5px;
-                color: #acacac;
+                color: #fff;
                 margin-top: 0px;
                 transition: 0.1s;
                 &:hover{
-                    background-color: #ececec;
-                    color: #727272;
+                    background-color: #7947cb;
+                    color: #fff;
                     transition: 0.1s;
                 }
                 &:first-child{
-                    margin-left: 20px;
+                    // margin-left: 20px;
                 }
             }
         }
     }
+}
+
+.ntc-profile-mobile{
+    display: none;
 }
 
 .ntc-intro{
@@ -125,6 +152,7 @@ body{
             font-size: 1.25em;
             color: #494949;
             line-height: 30px;
+            width: 70%;
         }
         .intro-link{
             color: #8e44ad;
@@ -139,9 +167,10 @@ body{
         }
     }
     img{
-        height: 400px;
+        height: 40vh;
+        width: auto;
         border-radius: 20px;
-        margin-left: 150px;
+        margin-left: auto;
     }
 }
 
@@ -231,16 +260,80 @@ footer{
 }
 
 .ntc-about-me{
-    margin-top: 3.5em;
+    margin-top: 10%;
     width: 60%;
-    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
     .ntc-about-title{
         font-size: 2.5em;
         font-weight: 700;
+        text-align: center;
     }
     .ntc-about-paragraph{
         font-size: 1.1em;
     }
+}
+
+.ntc-blog-container{
+    max-width: 1100px;
+    padding: 0 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ntc-blog-nav{
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ntc-blog{
+    margin-top: 5rem;
+    grid-gap: 5rem;
+    grid-template-columns: 3fr 1fr;
+    display: grid;
+    align-items: stretch;
+    .ntc-blog-title{
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        color: #000;
+    }
+    .ntc-blog-code{
+        overflow: hidden;
+        width: 88.8vh;
+    }
+    .ntc-blog-paragraph{
+        font-size: 1.1em;
+        color: #000;
+    }
+    .ntc-aside-content{
+        section{
+            margin: 1.5rem 0;
+            background: #f6f8fb;
+            padding: 1.5rem;
+            border-radius: .35rem;
+            .ntc-avatar{
+                display: block;
+                border-radius: 50%;
+                max-width: 180px;
+                margin: 0 auto 1rem;
+                height: auto;
+            }
+            h4{
+                font-size: 1.2em;
+                border-bottom: 1px solid #cccccc;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.ntc-blog-about{
+    height: 100px;
+    float: right;
+    background-color: #000;
 }
 
 .filename{
@@ -260,21 +353,19 @@ footer{
     margin-right: auto;
 }
 
-.ntc-blog-code{
-    scrollbar-width: none;
-}
-
 .ntc-article-list{
     width: 80%;
     margin-left: 10%;
-    margin-top: 50px;
+    margin-top: 10%;
     .ntc-article-list-title{
         font-weight: 800;
         font-size: 3em;
     }
     .ntc-latest-links{
+        margin-top: 5%;
         .ntc-latest-link{
             padding-top: 5px;
+            padding-bottom: 7px;
             border-radius: 10px;
             transition: 0.1s;
             &:hover{
@@ -360,7 +451,7 @@ footer{
 }
 
 //mobile style
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
     body{
         margin: 0px;
     }
@@ -377,8 +468,7 @@ footer{
         margin-top: 1px;
         font-size: 1em;
         .ntc-nav{
-            margin-left: 3%;
-            width: 94%;
+            width: 100%;
             cursor: pointer;
             .icon-logo{
                 float: left;
@@ -394,34 +484,40 @@ footer{
                     height: 1.1em;
                 }
                 &:hover{
-                    background-color: #ececec;
                     padding-left: 15px;
                     margin-left: -15px;
                     transition: 0.1s;
                 }
             }
             .ntc-menu{
+                margin-right: 1%;
                 .ntc-items{
                     padding: 10px 15px;
                     display: inline-block;
                     cursor: pointer;
                     border-radius: 5px;
-                    color: #acacac;
+                    color: #fff;
                     margin-top: 0px;
                     transition: 0.1s;
                     text-align: right;
                     justify-content: right;
                     &:hover{
-                        background-color: #ececec;
-                        color: #727272;
+                        color: #fff;
                         transition: 0.1s;
                     }
                 }
             }
         }
     }
+    .ntc-profile-mobile{
+        margin-top: 10vh;
+        display: block;
+        height: 30vh;
+        border-radius: 15px;
+        margin-left: 10%;
+    }
     .ntc-intro{
-        margin-top: 15vh;
+        margin-top: 1vh;
         margin-left: 10%;
         display: flex;
         justify-content: space-between;
@@ -429,7 +525,7 @@ footer{
         .intro-para{
             .ntc-intro1{
             padding-top: 10px;
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: 600;
             }
             .ntc-intro2{
@@ -437,6 +533,7 @@ footer{
                 font-size: 1.25em;
                 color: #494949;
                 line-height: 30px;
+                width: 100%;
             }
             .intro-link{
                 color: #8e44ad;
@@ -473,5 +570,41 @@ footer{
         .ntc-footer-list{
             width: 15em;
         }
+    }
+    .ntc-blog-container{
+        max-width: 1100px;
+        padding: 0 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .ntc-blog-nav{
+        
+        margin-right: auto;
+    }
+    
+    .ntc-blog{
+        margin-top: 5rem;
+        grid-gap: 0rem;
+        grid-template-columns: 100%;
+        display: grid;
+        align-items: stretch;
+        .ntc-blog-title{
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .ntc-blog-code{
+            overflow: hidden;
+            width: 100%;
+        }
+        .ntc-blog-paragraph{
+            font-size: 1.1em;
+        }
+    }
+    
+    .ntc-blog-about{
+        height: 100px;
+        float: right;
+        background-color: #000;
     }
 }

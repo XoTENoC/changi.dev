@@ -1,6 +1,6 @@
 const aboutBtn = document.getElementById("about");
 const blogBtn = document.getElementById("blog");
-const tutorialBtn = document.getElementById("tutorial");
+// const tutorialBtn = document.getElementById("tutorial");
 const galleryBtn = document.getElementById("gallery");
 const homeBtn = document.getElementById("home");
 const githubLink = document.getElementById("github");
@@ -17,9 +17,9 @@ blogBtn.onclick = function() {
     location.href = "./blog.html";
 };
 
-tutorialBtn.onclick = function() {
-    location.href = "./tutorial.html";
-};
+// tutorialBtn.onclick = function() {
+//     location.href = "./tutorial.html";
+// };
 
 galleryBtn.onclick = function() {
     location.href = "./gallery.html";

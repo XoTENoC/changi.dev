@@ -14,11 +14,29 @@
 
 * {
   margin: 0px;
-  padding: 0px;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Roboto, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-body {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+hr {
+  background-color: #cccccc;
+}
+
+a {
+  color: #000;
+}
+
+a:visited {
   color: #000;
 }
 
@@ -34,6 +52,7 @@ body {
   z-index: 1;
   -webkit-transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
   transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+  color: #000;
 }
 
 .links:hover {
@@ -61,14 +80,23 @@ body {
 }
 
 .ntc-header {
-  margin-top: 5vh;
+  padding: 0px;
   font-size: 20px;
+  background-color: #885bd0;
+  color: #fff;
+  z-index: 500 !important;
 }
 
 .ntc-header .ntc-nav {
-  margin-left: 10%;
-  width: 80%;
+  top: 0;
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   cursor: pointer;
+  background-color: #885bd0;
+  position: fixed;
+  z-index: 500 !important;
 }
 
 .ntc-header .ntc-nav .icon-logo {
@@ -76,7 +104,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 25px 20px 0px;
+  padding: 13px 17px 13px 0px;
   border-radius: 5px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
@@ -92,33 +120,38 @@ body {
 }
 
 .ntc-header .ntc-nav .icon-logo:hover {
-  background-color: #ececec;
+  background-color: #7947cb;
   padding-left: 25px;
   margin-left: -25px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
+.ntc-header .ntc-nav .ntc-menu {
+  margin-right: 10%;
+  float: right;
+}
+
 .ntc-header .ntc-nav .ntc-menu .ntc-items {
-  padding: 20px 25px;
+  padding: 13px 17px;
   display: inline-block;
   cursor: pointer;
   border-radius: 5px;
-  color: #acacac;
+  color: #fff;
   margin-top: 0px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
 .ntc-header .ntc-nav .ntc-menu .ntc-items:hover {
-  background-color: #ececec;
-  color: #727272;
+  background-color: #7947cb;
+  color: #fff;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
-.ntc-header .ntc-nav .ntc-menu .ntc-items:first-child {
-  margin-left: 20px;
+.ntc-profile-mobile {
+  display: none;
 }
 
 .ntc-intro {
@@ -144,6 +177,7 @@ body {
   font-size: 1.25em;
   color: #494949;
   line-height: 30px;
+  width: 70%;
 }
 
 .ntc-intro .intro-para .intro-link {
@@ -163,9 +197,10 @@ body {
 }
 
 .ntc-intro img {
-  height: 400px;
+  height: 40vh;
+  width: auto;
   border-radius: 20px;
-  margin-left: 150px;
+  margin-left: auto;
 }
 
 .ntc-latest {
@@ -265,18 +300,90 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
 }
 
 .ntc-about-me {
-  margin-top: 3.5em;
+  margin-top: 10%;
   width: 60%;
-  margin-left: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ntc-about-me .ntc-about-title {
   font-size: 2.5em;
   font-weight: 700;
+  text-align: center;
 }
 
 .ntc-about-me .ntc-about-paragraph {
   font-size: 1.1em;
+}
+
+.ntc-blog-container {
+  max-width: 1100px;
+  padding: 0 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ntc-blog-nav {
+  padding-left: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ntc-blog {
+  margin-top: 5rem;
+  grid-gap: 5rem;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.ntc-blog .ntc-blog-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: #000;
+}
+
+.ntc-blog .ntc-blog-code {
+  overflow: hidden;
+  width: 88.8vh;
+}
+
+.ntc-blog .ntc-blog-paragraph {
+  font-size: 1.1em;
+  color: #000;
+}
+
+.ntc-blog .ntc-aside-content section {
+  margin: 1.5rem 0;
+  background: #f6f8fb;
+  padding: 1.5rem;
+  border-radius: .35rem;
+}
+
+.ntc-blog .ntc-aside-content section .ntc-avatar {
+  display: block;
+  border-radius: 50%;
+  max-width: 180px;
+  margin: 0 auto 1rem;
+  height: auto;
+}
+
+.ntc-blog .ntc-aside-content section h4 {
+  font-size: 1.2em;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 15px;
+}
+
+.ntc-blog-about {
+  height: 100px;
+  float: right;
+  background-color: #000;
 }
 
 .filename {
@@ -296,14 +403,10 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
   margin-right: auto;
 }
 
-.ntc-blog-code {
-  scrollbar-width: none;
-}
-
 .ntc-article-list {
   width: 80%;
   margin-left: 10%;
-  margin-top: 50px;
+  margin-top: 10%;
 }
 
 .ntc-article-list .ntc-article-list-title {
@@ -311,8 +414,13 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
   font-size: 3em;
 }
 
+.ntc-article-list .ntc-latest-links {
+  margin-top: 5%;
+}
+
 .ntc-article-list .ntc-latest-links .ntc-latest-link {
   padding-top: 5px;
+  padding-bottom: 7px;
   border-radius: 10px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
@@ -400,7 +508,7 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
   color: #f03434;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   body {
     margin: 0px;
   }
@@ -415,8 +523,7 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
     font-size: 1em;
   }
   .ntc-header .ntc-nav {
-    margin-left: 3%;
-    width: 94%;
+    width: 100%;
     cursor: pointer;
   }
   .ntc-header .ntc-nav .icon-logo {
@@ -437,18 +544,20 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
     height: 1.1em;
   }
   .ntc-header .ntc-nav .icon-logo:hover {
-    background-color: #ececec;
     padding-left: 15px;
     margin-left: -15px;
     -webkit-transition: 0.1s;
     transition: 0.1s;
+  }
+  .ntc-header .ntc-nav .ntc-menu {
+    margin-right: 1%;
   }
   .ntc-header .ntc-nav .ntc-menu .ntc-items {
     padding: 10px 15px;
     display: inline-block;
     cursor: pointer;
     border-radius: 5px;
-    color: #acacac;
+    color: #fff;
     margin-top: 0px;
     -webkit-transition: 0.1s;
     transition: 0.1s;
@@ -458,13 +567,19 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
             justify-content: right;
   }
   .ntc-header .ntc-nav .ntc-menu .ntc-items:hover {
-    background-color: #ececec;
-    color: #727272;
+    color: #fff;
     -webkit-transition: 0.1s;
     transition: 0.1s;
   }
+  .ntc-profile-mobile {
+    margin-top: 10vh;
+    display: block;
+    height: 30vh;
+    border-radius: 15px;
+    margin-left: 10%;
+  }
   .ntc-intro {
-    margin-top: 15vh;
+    margin-top: 1vh;
     margin-left: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -476,7 +591,7 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
   }
   .ntc-intro .intro-para .ntc-intro1 {
     padding-top: 10px;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   .ntc-intro .intro-para .ntc-intro2 {
@@ -484,6 +599,7 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
     font-size: 1.25em;
     color: #494949;
     line-height: 30px;
+    width: 100%;
   }
   .ntc-intro .intro-para .intro-link {
     color: #8e44ad;
@@ -519,6 +635,42 @@ footer .ntc-footer-list .ntc-footer-item img:hover {
   }
   footer .ntc-footer-list {
     width: 15em;
+  }
+  .ntc-blog-container {
+    max-width: 1100px;
+    padding: 0 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ntc-blog-nav {
+    margin-right: auto;
+  }
+  .ntc-blog {
+    margin-top: 5rem;
+    grid-gap: 0rem;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .ntc-blog .ntc-blog-title {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  .ntc-blog .ntc-blog-code {
+    overflow: hidden;
+    width: 100%;
+  }
+  .ntc-blog .ntc-blog-paragraph {
+    font-size: 1.1em;
+  }
+  .ntc-blog-about {
+    height: 100px;
+    float: right;
+    background-color: #000;
   }
 }
 /*# sourceMappingURL=style.css.map */
