@@ -1,0 +1,36 @@
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Helvetica 65 Medium', sans-serif;
+}
+
+p{
+    font-size: 1.4rem;
+    line-height: 140%;
+}
+
+#about{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+#about .left{
+    width: 58%;
+}
+
+#about .right{
+    width: 40%;
+    float: right;
+}
+
+#about img{
+    width: 100%;
+    border-radius: 10%;
+}
