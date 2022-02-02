@@ -6,8 +6,18 @@ body{
 
 h1{
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-family: 'Helvetica 65 Medium', sans-serif;
+}
+
+.heading{
+    font-size: 2.25rem;
+}
+
+hr{
+    height: 0px;
+    border: none;
+    border-top: 3px solid black;
 }
 
 p{
@@ -15,19 +25,16 @@ p{
     line-height: 140%;
 }
 
-#about{
+#about, #gallery{
     width: 70%;
-    margin: 0 auto;
     margin-top: 10rem;
 }
 
-#about .left{
-    width: 58%;
+#about .left p{
+    padding-top: 2rem;
 }
 
 #about .right{
-    width: 40%;
-    float: right;
 }
 
 #about img{
