@@ -41,3 +41,14 @@ p{
     width: 100%;
     border-radius: 10%;
 }
+
+.gallery-image{
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom: 30%;
+    margin:1.66%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}

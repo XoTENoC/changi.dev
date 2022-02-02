@@ -4,6 +4,8 @@ index.html
 
 this is the basic version of my website and place on the internet but it will become more indepth throughout into the future. 
 
+insta token IGQVJYV2tqRHNWbHFiT3FPN3hoRldMLUN4UWQ1SkRLVlI4SlM2Q3JRMHR5SjJiV1R4SzJ1YW1MR2NjWUowY2RNSW94QnVPZATVIUC1GTTVXbnUzUFMwLTg5X2xVdzVFTENzX05NRW1BcElNdUQwQUtYRAZDZD
+
 -->
 
 <!DOCTYPE html>
@@ -32,10 +34,22 @@ this is the basic version of my website and place on the internet but it will be
         <section id="gallery" class="container">
             <h1 class="heading">Gallery</h1>
             <hr />
-            <div id="instagramfeed" class="instagram_feed"></div>
+            <div id="instafeed-container" class=""></div>
         </section>
 
-        <script src="./js/instafeed.min.js"></script>
-        <script src="./js/custom.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+        <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            limit: 9,
+            target: "instafeed-container",
+            resolution: 'low_resolution',
+            template: '<a href="{{link}}"><div style="background-image: url(\'{{image}}\');" class="gallery-image"> </div></a>',
+            accessToken: 'IGQVJYV2tqRHNWbHFiT3FPN3hoRldMLUN4UWQ1SkRLVlI4SlM2Q3JRMHR5SjJiV1R4SzJ1YW1MR2NjWUowY2RNSW94QnVPZATVIUC1GTTVXbnUzUFMwLTg5X2xVdzVFTENzX05NRW1BcElNdUQwQUtYRAZDZD'
+        });
+        userFeed.run();
+        </script>
     </body>
 </html>
