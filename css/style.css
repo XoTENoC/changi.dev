@@ -1,0 +1,129 @@
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2.75rem;
+    font-family: 'Helvetica 65 Medium', sans-serif;
+}
+
+.heading{
+    font-size: 2.25rem;
+}
+
+hr{
+    height: 0px;
+    border: none;
+    border-top: 3px solid black;
+}
+
+p{
+    font-size: 1.4rem;
+    line-height: 140%;
+}
+
+#about, #gallery, #contact{
+    width: 70%;
+    max-width: 1100px;
+    margin-top: 10rem;
+}
+
+.about-mobile{
+    display: none;
+}
+
+#about .left p{
+    padding-top: 2rem;
+}
+
+#about img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+.link{
+    padding: 0.75rem;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.link:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #017bff;
+    transition: 0.2s;
+}
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.gallery-image{
+    flex-grow: 1;
+    width: 30%;
+    padding-bottom: 30%;
+    margin:1.25%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.spacer{
+    height: 100px;
+}
+
+footer{
+    height: 50px;
+    background-color: #f0f0f0;
+    padding: 3rem;
+    margin-top: 20rem;
+}
+
+footer .center{
+    display: flex;
+    justify-content: center;
+}
+
+.img1{ background-image: url('https://lh3.googleusercontent.com/6xSUmXjZCx22jYfaXBGyvGvnRATuu7YoGL_2-TaKvg4XRmORBZHH8TuALd-xY3SVIbxxEdwoWwSqEALCzrUmI8y87zV5v63gnbv4_bpcK8YcDLUXnn9xTm5LN-dw6AiEWVbtTYhJTKw=w2400');}
+.img2{ background-image: url('https://lh3.googleusercontent.com/WGE42Ntany_z_-KCvFFdeK9XK1JTBjvz8c67XKqefp2hwxogD485XwlwAKRzf93E35CRkTnWHm_a-p17F3Prjma2Rz1hFK3FCO0Wl5v_H8Z9kWNTh3B3hg2YLaaK7FmiIR9kIp9uiJg=w2400');}
+.img3{ background-image: url('https://lh3.googleusercontent.com/i2kJGgnmAcMYQ8z4RUlPABDoPcvZOa81nM-XGjpiUStOn80FbBXdpnaGPF_ih6mtHfpCIvrF7cOPwZx1jgvwhXex8GGW5mhWra4Uap1Im4KOPTht0QL7kWUsPUdBxNMVU3SzjrFwISc=w2400');}
+.img4{ background-image: url('https://lh3.googleusercontent.com/6kyvU2tULAGej1yIfpENPETuPwQxE7_jiJWmS5iFagUDhTlWa8f5LeylGLMlJ5LbHFWdQach2geMS6eWWfJhwrIhTzfMSWbrCQxFa867wu0f4lRj-3fGUQLizX1J04h-nNSACbOISYs=w2400');}
+.img5{ background-image: url('https://lh3.googleusercontent.com/2dmpg75j2x8XM_sQeStJo_0k7S7btz7159yiV-faNQQDf86vI9i7oO9jVdyKwzQv7WTdL0xuXpuUms0LvceemNmWw3CfmHoO3kdj5eIyTvE27WUrZBZGCLwZ3zcPUyI-g9fzFMIrmNw=w2400');}
+.img6{ background-image: url('https://lh3.googleusercontent.com/zkyVOjtUB4BpqCPsKNZezSKjZIPCvYSuvHEsAkBBfXiq011o5eU8UTjIOe0hMFVZhOkem2mgxNMADpW42dc0LKfNTeX8JEKdvvMD0cL9EDDXDF8jgso8yuOmwbjNN2OAazIqU1erEpE=w2400');}
+.img7{ background-image: url('https://lh3.googleusercontent.com/3JB15rycnVtAIKPuYoEA92zOVMA5S32G9AB3Zk8aK2xs14BBZnQns0XrXZCpELjsg79QfgiJfN_PW7c4jGUnVIJfCnEP2-YpwxBMZdzAT2TiiwcgUUZvoAcObrOuTM70H3MVTrWbn8Q=w2400');}
+.img8{ background-image: url('https://lh3.googleusercontent.com/_BcyEu0zriqnui5c-sTYZd3XOsM3Nlww9KNsp-_BFt-mhdTNlfLzKWCxdliBILTCujCHn6prhLT2fhuNa061euA1unXsYHLArPM7hjC8ZZccOrypnZbUy9ydCpHLFgeFcXdSnhix8Q4=w2400');}
+.img9{ background-image: url('https://lh3.googleusercontent.com/3WzkFEiramKkQnlNbrCBCd8g24l1e4MbLbjyAHZYDKw-o_4YcfuYF-a_Ap7b8QM5SCrmb34bZlExSvadph5HZQ9TarDR-hLSBbSVpgqr0YzmEcJmeODK1jUkdd3_jhQ6QCxtXkosjDs=w2400');}
+.img10{ background-image: url('https://lh3.googleusercontent.com/z8w3mD11X-OF0o2v_cOZDi1QN91G2hIl5NSHRUeozBLW5PmU3-ps_tTxgAFwooynfu0OCNl4hekktppA1Fg4dfdpp39hsWpK8nWNunN4MuTWylqT6ZqWoIX5AU2ART297pbP9kwJbXE=w2400');}
+.img11{ background-image: url('https://lh3.googleusercontent.com/zWAeylNYK_609ryechGYERK8VQqvPTQEnk9hhSTPdCKyYUmCDD2CQPlOCsK0iOYkp7GreRFBw-PWyUWuj6ij2cLq10RoXnYpykGPx60qTbo607vbYnI88id2OnbK2VGNaT4_NgD_3v0=w2400');}
+.img12{ background-image: url('https://lh3.googleusercontent.com/6ijES2XyzeQSdcRWTQlxZrTD2BKRVozHNSzB_-8e8k4RjwWKyEGkU4USDFxfT_gMb8pu_SOFmGIW7kMEJ5JVkMgtZDBz0J1A1fF08ZWvjgh8x3Dyt4ui4Gyx7Qj6tmg8mkjGm4VZyKI=w2400');}
+
+@media only screen and (max-width: 600px) {
+    #about, #gallery, #contact, .about-mobile{
+        width: 95%;
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mobile-hidden{
+        display: none;
+    }
+
+    .about-mobile{
+        display: block;
+    }
+
+    .main-profile{
+        width: 65%;
+        border-radius: 10%;
+        margin-bottom: 2rem;
+    }
+}
