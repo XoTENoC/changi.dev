@@ -31,6 +31,10 @@ p{
     margin-top: 10rem;
 }
 
+.about-mobile{
+    display: none;
+}
+
 #about .left p{
     padding-top: 2rem;
 }
@@ -40,14 +44,14 @@ p{
     border-radius: 10%;
 }
 
-#about .link{
+.link{
     padding: 0.75rem;
     color: black;
     text-decoration: none;
     border-radius: 10px;
 }
 
-#about .link:hover{
+.link:hover{
     color: white;
     text-decoration: none;
     background-color: #017bff;
@@ -68,10 +72,24 @@ p{
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .spacer{
     height: 100px;
+}
+
+footer{
+    height: 50px;
+    background-color: #f0f0f0;
+    padding: 3rem;
+    margin-top: 20rem;
+}
+
+footer .center{
+    display: flex;
+    justify-content: center;
 }
 
 .img1{ background-image: url('https://lh3.googleusercontent.com/6xSUmXjZCx22jYfaXBGyvGvnRATuu7YoGL_2-TaKvg4XRmORBZHH8TuALd-xY3SVIbxxEdwoWwSqEALCzrUmI8y87zV5v63gnbv4_bpcK8YcDLUXnn9xTm5LN-dw6AiEWVbtTYhJTKw=w2400');}
@@ -86,3 +104,26 @@ p{
 .img10{ background-image: url('https://lh3.googleusercontent.com/z8w3mD11X-OF0o2v_cOZDi1QN91G2hIl5NSHRUeozBLW5PmU3-ps_tTxgAFwooynfu0OCNl4hekktppA1Fg4dfdpp39hsWpK8nWNunN4MuTWylqT6ZqWoIX5AU2ART297pbP9kwJbXE=w2400');}
 .img11{ background-image: url('https://lh3.googleusercontent.com/zWAeylNYK_609ryechGYERK8VQqvPTQEnk9hhSTPdCKyYUmCDD2CQPlOCsK0iOYkp7GreRFBw-PWyUWuj6ij2cLq10RoXnYpykGPx60qTbo607vbYnI88id2OnbK2VGNaT4_NgD_3v0=w2400');}
 .img12{ background-image: url('https://lh3.googleusercontent.com/6ijES2XyzeQSdcRWTQlxZrTD2BKRVozHNSzB_-8e8k4RjwWKyEGkU4USDFxfT_gMb8pu_SOFmGIW7kMEJ5JVkMgtZDBz0J1A1fF08ZWvjgh8x3Dyt4ui4Gyx7Qj6tmg8mkjGm4VZyKI=w2400');}
+
+@media only screen and (max-width: 600px) {
+    #about, #gallery, #contact, .about-mobile{
+        width: 95%;
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mobile-hidden{
+        display: none;
+    }
+
+    .about-mobile{
+        display: block;
+    }
+
+    .main-profile{
+        width: 65%;
+        border-radius: 10%;
+        margin-bottom: 2rem;
+    }
+}
