@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+
+// Colour Varibles
+$background-colour: #ffffff;
+$foreground-colour: #000000;
+
+$primary-colour: #1469FF;
+$secondary-colour: #88E1F1;
+
+$header-colour: #f3f3f3;
+$highlight-colour: #d0d0d0;
+
+html{
+  background-color: $background-colour;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+// Headings style
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Open Sans', sans-serif;
+  grid-column: main-start / main-end;
+  margin: 0px;
+  padding-top: 20px;
+
+}
+
+p{
+  font-family: 'Inter', sans-serif;
+  grid-column: main-start / main-end;
+  line-height: 1.75em;
+}
+
+// Components
+.container{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 5px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+// Header Styles
+header{
+  background-color: $header-colour;
+  margin: 0px;
+  padding: 0px;
+  div{
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  ul{
+    margin: 0px;
+    padding: 0px;
+    li{
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      list-style-type: none;
+      padding: 20px;
+      cursor: pointer;
+      transition: 0.2s ease;
+      &:first-child{
+        margin-left: -20px;
+      }
+      &:hover{
+        background-color: $highlight-colour;
+      }
+    }
+  }
+}
