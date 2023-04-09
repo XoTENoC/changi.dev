@@ -16,6 +16,9 @@ https://github.com/XoTENoC/Changi.dev.git
 
 <br />
 
+# things to come
+swapping the website to redwood js
+
 
 ## Connect with me:
 
