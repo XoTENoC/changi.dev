@@ -7,12 +7,6 @@ The bulk of the website is written in html and css but i plan on changing it to 
 
 ## Installation
 Literaly just download and run the index.html. But the css was writen in scss so a complier might be need for scss.
-<br />
-<br />
-### Git Clone Link
-```Bash
-https://github.com/XoTENoC/Changi.dev.git
-```
 
 <br />
 
