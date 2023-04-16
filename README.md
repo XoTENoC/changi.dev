@@ -10,7 +10,7 @@ Literaly just download and run the index.html. But the css was writen in scss so
 
 <br />
 
-# things to come
+## things to come
 swapping the website to redwood js
 
 
