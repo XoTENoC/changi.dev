@@ -11,7 +11,7 @@ Literaly just download and run the index.html. But the css was writen in scss so
 <br />
 
 ## Things to come
-swapping the website to redwood js
+Swapping the website to redwood js
 
 
 ## Connect with me:
