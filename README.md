@@ -3,7 +3,6 @@
 Welcome to the repo of my source code, this is my playground a place where I can talk about my code and just try new things. At this point time the website is not live but in the near future it should be and the link will be changi.dev.<br />
 The bulk of the website is written in html and css but I plan on changing it to javascript templates to make it easier to write a backend for the website.
 <br />
-<br />
 
 ## Installation
 Literaly just download and run the index.html. But the css was writen in scss so a complier might be need for scss.
