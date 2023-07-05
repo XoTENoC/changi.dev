@@ -10,7 +10,7 @@ Literaly just download and run the index.html. But the css was writen in scss so
 <br />
 
 ## Things to come
-Swapping the website to redwood js
+Swapping the website to redwood js, and loving the figma dev mode
 
 
 <br />
